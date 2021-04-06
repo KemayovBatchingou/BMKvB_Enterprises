@@ -1,0 +1,49 @@
+﻿@model BMKT_Enterprises.Models.ContactModel
+@{
+    ViewData["Title"] = "Contact US";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>
+    @ViewData["Message"]
+</h3>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name">
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input class="form-control" asp-for="Email">
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Message"></label>
+        <textarea class="form-control" asp-for="Message"></textarea>
+        <span asp-validation-for="Message"></span>
+    </div>
+    <div class="form-group">
+        <button name="button" value="submit" asp-action="submit">Submit</button>
+        <div>
+            @TempData["submitval"]
+        </div>
+    </div>
+</form>
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<address>
+    <br /><br /><br />
+    Sonnenstr. 8a<br />
+    87487 Wiggensbach<br />
+    <abbr title="Phone">P:</abbr>
+    0049(0)1623277414
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Tkemayo@bmkt.com">Tkemayo@bmkt.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Diane.francoise18@bmkt.com ">Diane.francoise18@bmkt.com </a>
+</address>

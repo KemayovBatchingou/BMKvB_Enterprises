@@ -1,0 +1,75 @@
+﻿
+@page
+@model Models.ContactModel
+@{
+    ViewBag.Title = "Contact";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", style = "width: 40%; max-width: 100%;" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Surname, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Surname, new { htmlAttributes = new { @class = "form-control", style = "width: 40%; max-width: 100%;" } })
+                @Html.ValidationMessageFor(model => model.Surname, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", style = "width: 40%; max-width: 100%;" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, 10, 55, new { htmlAttributes = new { @class = "form-control", style = "width: 100%; max-width: 100%;" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-12">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+                <input type="submit" value="Draft" class="btn btn-primary" />
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @ViewBag.Msg
+
+            </div>
+
+        </div>
+    </div>
+}
+
+<address>
+    <br /><br /><br />
+    Sonnenstr. 8a<br />
+    87487 Wiggensbach<br />
+    <abbr title="Phone">P:</abbr>
+    0049(0)1623277414
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Tkemayo@bmkt.com">Tkemayo@bmkt.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Diane.francoise18@bmkt.com ">Diane.francoise18@bmkt.com </a>
+</address>

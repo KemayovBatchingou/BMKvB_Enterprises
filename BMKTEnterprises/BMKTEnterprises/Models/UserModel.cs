@@ -1,0 +1,17 @@
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace BMKTEnterprises.Models
+{
+    public class UserModel : PageModel
+    {
+        public int ID { get; set; }
+        public string Title { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Address { get; set; }
+    }
+}

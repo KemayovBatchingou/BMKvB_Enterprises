@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMKTEnterprises", "BMKTEnterprises\BMKTEnterprises.csproj", "{5A52C4AD-16FC-4506-B0BA-7D1044E581D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMKT Enterprises", "BMKT_Enterprises\BMKT Enterprises.csproj", "{B3F9135D-59DB-4235-BE86-E6566994EDF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A52C4AD-16FC-4506-B0BA-7D1044E581D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A52C4AD-16FC-4506-B0BA-7D1044E581D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A52C4AD-16FC-4506-B0BA-7D1044E581D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A52C4AD-16FC-4506-B0BA-7D1044E581D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F9135D-59DB-4235-BE86-E6566994EDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F9135D-59DB-4235-BE86-E6566994EDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F9135D-59DB-4235-BE86-E6566994EDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F9135D-59DB-4235-BE86-E6566994EDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C645FC11-E3A8-4578-BD0D-D1DD2C932891}
+	EndGlobalSection
+EndGlobal

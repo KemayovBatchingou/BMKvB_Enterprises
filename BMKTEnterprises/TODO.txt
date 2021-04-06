@@ -1,0 +1,4 @@
+1) Design de la page web bis 20.01.2021
+2) Sous onglez bis 15.01.2021
+-->http://asptipsandtricks.blogspot.com/2016/10/dynamic-navbar-in-mvc.html
+-->https://www.mikesdotnetting.com/article/347/localising-data-annotation-attributes-in-razor-pages
